@@ -66,7 +66,7 @@ authForm.addEventListener("submit", async function (event) {
                 email: email,
                 password: password,
                 options: {
-                    emailRedirectTo: window.location.origin + "/auth.html"
+                    emailRedirectTo: window.location.origin + "/SpendWise/auth.html"
                 }
             });
         } else {
