@@ -578,8 +578,25 @@ dialog::backdrop {
     .chart-card {
         padding: 18px;
     }
-
-    .chart-container {
+       .chart-container {
         height: 260px;
     }
 }
+@media (max-width: 600px) {
+    .sidebar-bottom {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 12px;
+        padding: 12px;
+        box-sizing: border-box;
+    }
+
+    .logout-btn {
+        display: block;
+        width: 100%;
+        min-height: 44px;
+    }
+}
+
+ 
