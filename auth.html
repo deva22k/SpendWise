@@ -1,0 +1,62 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SpendWise | Login</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="auth.js" defer></script>
+</head>
+<body>
+
+    <main class="auth-container">
+        <section class="auth-card">
+
+            <h1 class="logo">Spend<span>Wise.</span></h1>
+            <p class="auth-subtitle">Manage your money smarter.</p>
+
+            <div class="auth-tabs">
+                <button type="button" id="login-tab" class="auth-tab active">
+                    Login
+                </button>
+                <button type="button" id="signup-tab" class="auth-tab">
+                    Sign up
+                </button>
+            </div>
+
+            <form id="auth-form">
+                <label for="auth-email">Email address</label>
+                <input
+                    type="email"
+                    id="auth-email"
+                    placeholder="you@example.com"
+                    required
+                >
+
+                <label for="auth-password">Password</label>
+                <input
+                    type="password"
+                    id="auth-password"
+                    placeholder="Enter your password"
+                    minlength="6"
+                    required
+                >
+
+                <button type="submit" id="auth-submit" class="auth-submit">
+                    Login
+                </button>
+
+                <p id="auth-message" role="status"></p>
+            </form>
+
+            <a href="index.html" class="back-link" id="back-to-dashboard">
+    Back to dashboard
+</a>
+
+        </section>
+    </main>
+
+</body>
+</html>
